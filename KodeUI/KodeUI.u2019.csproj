@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C4F5F45-D5A4-4C96-84D9-86ECF68DB7A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KodeUI</RootNamespace>
+    <AssemblyName>KodeUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <BaseIntermediateOutputPath>..\obj\u2019</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\LIB\managed\1.8.1\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\LIB\managed\1.8.1\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\..\LIB\managed\1.8.1\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\LIB\managed\1.8.1\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\LIB\managed\1.8.1\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\..\..\..\LIB\managed\1.8.1\UnityEngine.UIElementsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\..\..\LIB\managed\1.8.1\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\LIB\managed\1.8.1\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\LIB\managed\1.8.1\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\..\..\..\LIB\managed\1.8.1\UnityEngine.Physics2DModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\UIText.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\UIImage.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\Style.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\Viewport.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\Touchable.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\Loader.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\AnchorLayoutGroup.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\UIButton.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\LayoutDebug.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\VertiLinkLayoutGroup.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\UISlider.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\Draggable.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\LayoutPanel.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\UIRepeatButton.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\ImageLoader.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\ScrollView.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\TabController.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\RectTransformExtensions.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\UIDropdown.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\SpriteLoader.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\UIKit.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\LayoutExtra.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\Window.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\UIObject.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\LayoutAnchor.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\Skin.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\Utils.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\TreeView.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\UIScrollbar.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\UIToggle.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\UIEmpty.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\Titlebar.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\Layout.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\UIInputField.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\UIRectMask.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\UILayoutElement.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\Unity-Helpers\UnityUtils.cs" />
+    <Compile Include="..\KodeUI-Unity\Assets\KodeUI\Unity-Helpers\UnityExtensions.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
