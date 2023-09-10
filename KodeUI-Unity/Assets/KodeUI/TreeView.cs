@@ -171,7 +171,11 @@ namespace KodeUI
                     }
                 } else {
                     if (selected) {
+#if U2017
+                        tintColor = colors.pressedColor;
+#else
                         tintColor = colors.selectedColor;
+#endif
                     } else {
                         tintColor = colors.normalColor;
                     }

@@ -85,7 +85,9 @@ namespace KodeUI
 				colorBlock.pressedColor = c;
 			}}
 			{if (ParseColor(node.GetValue ("selectedColor")) is Color c) {
-				colorBlock.selectedColor = c;
+#if U2019
+			colorBlock.selectedColor = c;
+#endif
 			}}
 			{if (ParseColor(node.GetValue ("disabledColor")) is Color c) {
 				colorBlock.disabledColor = c;
@@ -113,7 +115,9 @@ namespace KodeUI
 				sprites.pressedSprite = s;
 			}}
 			{if (SpriteLoader.GetSprite (node.GetValue ("selectedSprite")) is Sprite s) {
+#if U2019
 				sprites.selectedSprite = s;
+#endif
 			}}
 			{if (SpriteLoader.GetSprite (node.GetValue ("disabledSprite")) is Sprite s) {
 				sprites.disabledSprite = s;
